@@ -19,7 +19,10 @@ createGrid();
 
 container.addEventListener("mouseover", (e) => {
     if (e.target.classList.contains("gridSquare")) {
-        e.target.style.backgroundColor = "blue";
+        let red = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        e.target.style.backgroundColor = `rgb(${red}, ${blue}, ${green})`;
     }
     
 })
@@ -37,7 +40,6 @@ btnChange.addEventListener("click", (e) => {
         alert("Your number must be less than 100.")
     } else {
         numSquares = Number(newSize);
-        grid = numSquares * numSquares;
         container.innerHTML = "";
         createGrid();
     }
