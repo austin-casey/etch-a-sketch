@@ -1,4 +1,42 @@
 
-.container {
+.content {
     display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+html {
+    background-color: #F9FAFB;
+}
+
+.title {
+    text-align: center;
+    background-color: #122643;
+    color: #F9FAFB;
+}
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    background-color: #2D6ACF;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 480px;
+}
+
+.gridSquare {
+    box-sizing: border-box;
+    border: 1px solid black;
 }
